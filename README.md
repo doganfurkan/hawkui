@@ -8,7 +8,6 @@
 
 ```bash
 npm install --save hawkui
-npm install --save hawkui
 ```
 
 ## Usage
@@ -18,12 +17,9 @@ import React, { Component } from 'react'
 
 import {Button} from 'hawkui'
 import 'hawkui/dist/index.css'
-import {Button} from 'hawkui'
-import 'hawkui/dist/index.css'
 
 class Example extends Component {
   render() {
-    return <Button type="primary">Primary Button</Button>
     return <Button type="primary">Primary Button</Button>
   }
 }
