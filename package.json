@@ -4,7 +4,7 @@
   "description": "First library try",
   "author": "doganfurkan",
   "license": "MIT",
-  "repository": "doganfurkan/koalaui",
+  "repository": "doganfurkan/hawkui",
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
   "source": "src/index.js",
