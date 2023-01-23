@@ -1,9 +1,161 @@
 /* add css module styles here (optional) */
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@100;200;300;400;500;600&display=swap');
 
-.test {
-  margin: 2em;
-  padding: 0.5em;
-  border: 2px solid #000;
-  font-size: 2em;
-  text-align: center;
+.koalauibuton {
+  padding: 0.5em 0.75em;
+  margin: 1em;
+  font-family: 'Sofia Sans';
+  font-size: 1em;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.25s;
+  border-radius: 0.25em;
+  background: transparent;
+  box-sizing: border-box;
+  border: 2px solid rgb(74, 94, 94);
+  color: rgb(74, 94, 94);
+}
+
+.koalauibuton:focus,
+.koalauibuton:hover {
+  box-shadow: 0.25em 0.25em 0.25em #0003;
+}
+
+.dashed {
+  background: transparent;
+  border: 2px dashed rgb(74, 94, 94);
+  color: rgb(74, 94, 94);
+}
+
+.primary {
+  background-color: rgb(74, 94, 94);
+  border: 2px solid rgb(74, 94, 94);
+  color: #fff;
+  position: relative;
+}
+
+.primary:focus:before,
+.primary:hover:before {
+  width: calc(100% + 4px);
+  content: '';
+  height: calc(100% + 4px);
+  background: linear-gradient(0deg, #0001 50%, #fff2 50%, #fff2);
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  border-radius: 0.25em;
+}
+
+.link {
+  border: 2px solid rgba(30, 144, 255, 0.1);
+  color: dodgerblue;
+  background: rgba(30, 144, 255, 0.1);
+}
+
+.link:focus,
+.link:hover {
+  border: 2px solid dodgerblue;
+  text-decoration: underline;
+}
+
+.danger {
+  background: linear-gradient(
+    45deg,
+    rgba(255, 166, 0, 0.2) 0% 25%,
+    rgba(0, 0, 0, 0.2) 25% 50%,
+    rgba(255, 166, 0, 0.2) 50% 75%,
+    rgba(0, 0, 0, 0.2) 75% 100%
+  );
+  border: 2px solid #555;
+  color: #000;
+}
+
+.danger:focus,
+.danger:hover {
+  background: linear-gradient(
+    45deg,
+    rgba(255, 166, 0, 0.8) 0% 25%,
+    rgba(0, 0, 0, 0.8) 25% 50%,
+    rgba(255, 166, 0, 0.8) 50% 75%,
+    rgba(0, 0, 0, 0.8) 75% 100%
+  );
+  color: #fff;
+  text-shadow: 0 0 0.2em #000;
+}
+
+.disabled {
+  background: rgb(230, 230, 230);
+  color: rgb(150, 150, 150);
+  border: 2px solid rgb(150, 150, 150);
+  pointer-events: none;
+}
+
+.success {
+  background: linear-gradient(225deg, rgb(200, 255, 200), rgb(160, 230, 160));
+  border: 2px solid rgb(30, 104, 30);
+  color: rgb(30, 104, 30);
+}
+
+.insta {
+  background: transparent;
+  border: 2px solid transparent;
+  position: relative;
+  color: #fff;
+}
+
+.insta:before {
+  content: '';
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  left: -2px;
+  top: -2px;
+  background: linear-gradient(
+    38deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgb(255, 183, 82) 100%
+  );
+  position: absolute;
+  border-radius: inherit;
+  z-index: -1;
+}
+
+.googol {
+  background: linear-gradient(
+    90deg,
+    #4285f4 0 26%,
+    #db4437 25% 41%,
+    #f4b400 41% 57%,
+    #4285f4 57% 73%,
+    #0f9d58 73% 83%,
+    #db4437 83% 100%
+  );
+  color: #fff;
+  border-color: transparent;
+}
+
+.error{
+	background:linear-gradient(225deg,#ff8c82,rgb(213, 85, 85));
+	color:rgb(148, 3, 3);
+	border-color:rgb(148, 3, 3)
+}
+
+.pickme{
+	background:linear-gradient(70deg,red,purple,blue,skyblue,lime,green,yellow,red,red,purple,blue);
+	background-size:600%;
+	color:#fff;
+	border-color:transparent;
+}
+
+.pickme:focus,.pickme:hover{
+	animation: pick 2s linear infinite;
+}
+
+@keyframes pick{
+	0%{
+		background-position-x: 0;
+	}
+	100%{
+		background-position-x: 100%;
+	}
 }
